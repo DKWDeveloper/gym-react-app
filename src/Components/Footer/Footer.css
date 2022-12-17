@@ -1,0 +1,82 @@
+.footer-container {
+    /* border: 1px solid; */
+    width: 100%;
+    background-color: #2e3b42;
+}
+
+.inner-footer-container {
+    /* border: 1px solid red; */
+    width: 80%;
+    text-align: center;
+}
+
+
+.footer-logo {
+    padding-top: 24px;
+    width: 200px;
+}
+
+.h1-gym-club {
+    padding-top: 20px;
+    color: #fff;
+}
+
+.p-contact {
+    padding: 20px 0px;
+    color: #708e9f;
+}
+
+
+.footer-social-cnt {
+    padding: 15px 0px;
+}
+
+
+.footer-social-div {
+    border-radius: 0px;
+    border: none;
+    background-color: #263036;
+}
+
+.copyright {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 12px;
+    text-align: center;
+    background-color: #263036;
+    color: #9daae0;
+}
+
+.copyright a {
+    color: #708e9f;
+}
+
+.copyright a:hover {
+    color: #0eb290;
+}
+
+.social-card-hover-1 {
+    background-color: #263036;
+}
+
+.social-card-hover-1:hover {
+    background-color: #0eb290;
+    ;
+
+}
+
+.card-social-icon-bg-1 {
+    border: 1px solid #ddd;
+    width: 42px;
+    height: 42px;
+    color: #b5b5b5;
+    background-color: #263036;
+    margin-right: 5px;
+}
+
+
+.social-icon {
+    background-color: #263036;
+}

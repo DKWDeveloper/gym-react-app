@@ -1,0 +1,18 @@
+/* .abouttitle {
+
+
+    width: 50%;
+    font-size: 20px;
+    font-weight: 400;
+    color: red;
+}
+ */
+.about-container {
+
+    background-image: url('https://gym.oceanwp.org/wp-content/uploads/2022/03/gym-header5.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 400px;
+    opacity: 1.0s;
+}
+

@@ -1,0 +1,20 @@
+.inner-body-row-5 {
+    width: 100%;
+    padding-top: 27px;
+    /* display: grid; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+.part-5 {
+
+    float: left;
+    width: 24%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}

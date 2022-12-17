@@ -1,0 +1,32 @@
+.main-container-8 {
+
+    width: 100%;
+}
+
+.inner-cnt-8 {
+    width: 80%;
+
+}
+
+.card-cnt {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.price-h5 {
+    font-size: 14px;
+    color: #0eb290;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,245 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+.first-container {
+  width: 100%;
+  min-height: 630px;
+  background-image: url('https://gym.oceanwp.org/wp-content/uploads/2022/03/gym-hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  opacity: 1.0s;
+}
+
+
+
+.display-column-space {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.display-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.display-column-hori-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.display-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.display-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display-hori-center {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.display-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.display-column-ver-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.display-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.display-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* ****************This is nav social icon ********************/
+.toggle-btn-close {
+  display: block;
+  position: relative;
+  top: 0;
+  right: 0;
+
+  cursor: pointer;
+
+}
+
+
+.nav-social-imgs1 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  color: white;
+  /* margin-right: 2px; */
+
+}
+
+.nav-social-bg-1 {
+  background-color: #46d4fe;
+}
+
+.social-hover i:hover {
+  background-color: #39b4d8;
+}
+
+.nav-social-bg-2 {
+  background-color: #37589b;
+  color: white
+}
+
+.facebook-hover {
+  margin: 0px 5px;
+}
+
+.facebook-hover i:hover {
+
+  background-color: #2d477c;
+}
+
+.nav-social-bg-3 {
+  background-color: #c4302b;
+
+  color: white;
+}
+
+.youtube-hover i:hover {
+  background-color: #982420;
+}
+
+
+
+
+.card-social-icon-bg {
+  border: 1px solid #ddd;
+  width: 42px;
+  height: 42px;
+  color: #b5b5b5;
+  background-color: #fff;
+  margin-right: 5px;
+}
+
+.social-card-hover div:hover {
+  background-color: #0eb290;
+  border-color: #0eb290;
+}
+
+.social-card-hover-2 div:hover {
+
+  color: #fff;
+}
+
+.social-cnt-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+
+.nav-social-imgs-5 {
+  font-size: 17px;
+}
+
+/* **************************** */
+
+
+
+.body-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.inner-body-container {
+
+  width: 80%;
+  /* height: 100%; */
+
+
+}
+
+.inner-body-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  /* margin-bottom: 20px; */
+}
+
+
+

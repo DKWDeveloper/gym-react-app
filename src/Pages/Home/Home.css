@@ -1,0 +1,104 @@
+/* ***********************This part is a Discover Part ***************************** */
+
+
+.discover-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+
+    /* position: absolute;
+    top: 120px; */
+
+}
+
+.discover-inner-container {
+
+    /* border: 1px solid red; */
+    width: 90%;
+    /* height: 60vh; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 180px;
+    /* padding-top: 90px; */
+
+
+}
+
+.discover-title {
+    color: #fff;
+    font-size: 60px;
+}
+
+.discover-para {
+    color: white;
+    line-height: 1.6;
+    font-size: 18px;
+    padding-top: 10px;
+
+    /* margin-top: 7px 0px; */
+    /* text-indent: 50px; */
+}
+
+.discover-button {
+    padding-top: 50px;
+}
+
+.button-common {
+    border: none;
+    color: #080808;
+    font-size: 12px;
+    padding: 18px 48px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.button-1 {
+    font-weight: 600;
+    background: white;
+}
+
+.button-2 {
+    color: white;
+    font-weight: 700;
+    background-color: #0eb290;
+}
+
+.btn-hover-2 span:hover {
+    background-color: #28806d;
+}
+
+/* **********Media Query for all components ************/
+@media (max-width: 1024px) {
+    .first-container {
+
+        background-image: url('https://gym.oceanwp.org/wp-content/uploads/2022/03/gym-hero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+
+    .discover-inner-container {
+        width: 100%;
+    }
+
+    .discover-title {
+        /* margin-top: -50px; */
+        font-size: 32px;
+    }
+
+    .discover-para {
+        font-size: 16px;
+        padding-top: 14px;
+
+    }
+
+    .discover-button {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,140 @@
+.card-img-container-9 {
+    border: 1px solid #f0eff0;
+    width: 32%;
+
+}
+
+
+.overlay-container-9 {
+    position: relative;
+    width: 100%;
+    /* height: 229.77px; */
+}
+
+
+
+
+.overlay-img-9 {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    background-color: rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.overlay-effect-2 {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .2);
+    overflow: hidden;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.overlay-effect-3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(1, 1, 1, .3);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+
+}
+
+.overlay-container-9:hover .overlay-effect-3 {
+    height: 100%;
+}
+
+
+.btn-learn-more {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    color: #fff;
+    width: 150px;
+    border-radius: 30px;
+    padding: 10px 12px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.overlay-container-9:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-container-9 .btn-learn-more:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+
+
+.overlay-container-9:hover .overlay-effect-2 {
+    bottom: 0;
+    height: 100%;
+}
+
+.content-9 {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.h3-9 {
+    font-size: 16px;
+}
+
+.paragraph-9 {
+    font-size: 15px;
+    padding: 9px;
+    line-height: 1.9;
+}
+
+
+
+.card-bottom-part {
+    font-size: 15px;
+    color: #aaa;
+    padding: 14px 14px;
+    background-color: #f0eff0;
+}
+
+
+
+.span-folder {
+    float: right;
+}
+
+@media (max-width: 1024px) {
+    .h3-9{
+        font-size: 15px;
+    }
+
+    .paragraph-9{
+        font-size: 14px;
+    }
+
+    .card-bottom-part{
+        font-size: 12px;
+    }
+}

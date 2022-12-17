@@ -1,0 +1,19 @@
+.container-9 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-container-9 {
+    width: 80%;
+    /* border: 1px solid red; */
+}
+
+.main-card-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 1px solid #f0eff0; */
+    margin-bottom: 20px;
+    margin-top: 24px;
+}

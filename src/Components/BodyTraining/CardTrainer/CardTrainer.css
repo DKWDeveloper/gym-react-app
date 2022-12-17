@@ -1,0 +1,46 @@
+.card-inner-inner-cnt {
+
+    display: flex;
+    justify-content: space-around;
+    padding: 35px 0 0 0px;
+    /* flex-direction: row; */
+}
+
+.cnt-2 {
+    padding-top: 50px;
+}
+
+.card-image {
+    border-radius: 50%;
+    width: 82.5px;
+    height: 82.5px;
+}
+
+.float-right {
+    margin: -9px auto 0px 15px;
+}
+
+.circuit-heading {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+
+}
+
+.card-para {
+    line-height: 1.8;
+}
+
+@media (max-width: 1024px) {
+
+    .card-inner-pic-cnt{
+        margin: 20px 0px;
+    }
+
+    .circuit-heading {
+        font-size: 14px;
+    }
+
+    .card-para {
+        font-size: 14px;
+    }
+}

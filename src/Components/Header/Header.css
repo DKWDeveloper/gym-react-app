@@ -1,0 +1,409 @@
+/*************************************This is common dsiplay style for all******************************* */
+
+
+
+/* *****************end********************* */
+
+
+
+
+/* *******************************This part is a Nav-Bar**********************  */
+
+
+
+.list-color{
+    color: white;
+    font-family: sans-serif;
+}
+
+
+
+.size {
+    width: 36px;
+    height: 36px;
+    border-radius: 20px;
+}
+
+.profile-icon {
+    position: relative;
+    cursor: pointer;
+
+    margin-right: 20px;
+}
+
+.reg-span {
+    position: absolute;
+    left: 0;
+    top: 36px;
+
+    color: white;
+    font-size: 10px;
+    margin: 0px 0 0 -11px
+}
+
+.backgound-overlay {
+    position: absolute;
+    width: 100%;
+    min-height: 630px;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .5;
+    transition: background .3s, border-radius .3s, opacity .3s;
+    transition-property: background, border-radius, opacity;
+    transition-duration: 0.3s, 0.3s, 0.3s;
+    transition-timing-function: ease, ease, ease;
+    transition-delay: 0s, 0s, 0s;
+}
+
+.Nav-bar {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    background-color: transparent;
+    /* border-bottom: 1px solid gray; */
+    position: fixed;
+    z-index: 10000;
+    transition: 0.5s;
+    /* background-color: #263036; */
+    /* padding: 38px 0px; */
+
+}
+
+.navbar1 {
+    background-color: #263036;
+    transition: 0.5s;
+}
+
+#click {
+    display: none;
+}
+
+.menu-slide {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.responsive-nav-bar {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 9vh;
+    background: #0eb290;
+    cursor: pointer;
+    padding: 0px 8px 0px -4px;
+    height: 350px;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+.responsive-ul {
+    width: 100%;
+    /* height: 100%;  */
+    /* overflow-y: scroll;  */
+    text-transform: capitalize;
+    color: white;
+    list-style: none;
+    font-size: .8rem;
+}
+
+.responsive-search-div,
+.responsive-list {
+    padding: 15px 35px;
+    border-bottom: 1px solid rgba(0, 0, 0, .035);
+
+}
+
+
+.display-flex {
+    display: flex;
+    padding: 15px 35px;
+}
+
+.responsive-search-input {
+    width: 100%;
+    padding: 14px;
+    color: #fff;
+    outline: none;
+    background-color: #0a997b;
+    border: 1px solid #027c52;
+}
+
+.responsive-search-div {
+    position: relative;
+}
+
+.responsive-search-icon {
+    position: absolute;
+    top: 30px;
+    right: 55px;
+    font-size: 13px;
+    color: #7A7A7A;
+}
+
+.responsive-search-input::placeholder {
+    color: #7A7A7A;
+
+}
+
+.sticky {
+    background-color: red;
+    height: 9vh;
+    transition-duration: 0.5s;
+    /* transition: padding .3s ease; */
+    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+    background-color: #fff;
+    border: none;
+    opacity: .95;
+
+}
+
+.sticky .title-scroll {
+    color: black;
+}
+
+.sticky a {
+    color: black;
+}
+
+
+.sticky .nav-search-img {
+    color: black;
+}
+
+.sticky .span-burger-btn {
+    color: black;
+}
+
+#menu-ham:hover {
+    color: #0eb290;
+}
+
+/* .sticky a .search-s {
+    color: black;
+  } */
+
+.Nav-bar-inner {
+
+    width: 80%;
+    height: 12vh;
+    background-color: transparent;
+    /* padding: 35px 0px; */
+
+}
+
+.Nav-logo-left {
+
+    width: 100%;
+
+}
+
+.brand-hover img:hover {
+    opacity: 0.3;
+}
+
+.Nav-brand-logo {
+    width: 23px;
+    height: 23px;
+}
+
+.title {
+    margin: auto;
+    font-weight: 100;
+    font-size: 16px;
+    color: #fff;
+    padding-bottom: 2px;
+}
+
+.title-hover h1:hover {
+    opacity: 0.3;
+}
+
+.Nav-bar-inner-right {
+    width: 100%;
+
+
+    /* height: 20vh; */
+}
+
+.toggle-btn-close {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-mobile-2 {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .Nav-bar-inner-right {
+        display: none;
+    }
+
+    .toggle-btn-close {
+        display: block;
+        position: relative;
+
+
+        cursor: pointer;
+
+    }
+
+    .menu-mobile {
+        display: block;
+        transition: 0.5s;
+    }
+
+    .menu-mobile-2 {
+        display: none;
+        transition: 0.5s;
+    }
+}
+
+.Nav-menu-list {
+    color: black;
+    /* margin-left: -136px; */
+}
+
+.Nav-menu-list-1 {
+    background-color: #008CBA;
+    color: red;
+}
+
+a {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #28806d;
+}
+
+.menu-options {
+    color: #fff;
+    font-size: 14px;
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0 20px;
+}
+
+.nav-search-img {
+    color: #fff;
+    font-size: 13px;
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+}
+
+.search-a i:hover {
+    color: #28806d;
+}
+
+.nav-social-cnt {
+
+    margin-left: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+/* .nav-social-imgs {
+  
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+  
+  } */
+
+.nav-social-imgs1 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    width: 36px;
+    height: 36px;
+    justify-content: center;
+    color: white;
+    /* margin-right: 2px; */
+    /* background-color: #1DA1F2; */
+}
+
+.nav-social-bg-1 {
+    background-color: #46d4fe;
+}
+
+.social-hover i:hover {
+    background-color: #39b4d8;
+}
+
+.nav-social-bg-2 {
+    background-color: #37589b;
+    color: white
+}
+
+.facebook-hover {
+    margin: 0px 5px;
+}
+
+.facebook-hover i:hover {
+
+    background-color: #2d477c;
+}
+
+.nav-social-bg-3 {
+    background-color: #c4302b;
+
+    color: white;
+}
+
+.youtube-hover i:hover {
+    background-color: #982420;
+}
+
+
+
+
+.card-social-icon-bg {
+    border: 1px solid #ddd;
+    width: 42px;
+    height: 42px;
+    color: #b5b5b5;
+    background-color: #fff;
+    margin-right: 5px;
+}
+
+.social-card-hover div:hover {
+    background-color: #0eb290;
+    border-color: #0eb290;
+}
+
+.social-card-hover-2 div:hover {
+
+    color: #fff;
+}
+
+.social-cnt-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+.nav-social-imgs-5 {
+    font-size: 17px;
+}

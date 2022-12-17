@@ -1,0 +1,157 @@
+.subscribe-container {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+.subscribe-inner-container {
+    width: 80%;
+}
+
+.subscribe-fields {
+    margin: 50px 0px;
+}
+
+.subscribe-left-side {
+    width: 47%;
+    margin: auto;
+}
+
+.subscribe-left-side h2 {
+    font-size: 18px;
+}
+
+
+.subscribe-left-side p {
+    font-size: 15px;
+}
+
+
+
+
+
+/* .email-input{
+    position: relative;
+} */
+
+.email-input {
+    width: 100%;
+    height: 48px;
+    outline: none;
+    padding: 12px 12px;
+    border: none;
+
+    /* border: 1px solid #ddd; */
+
+}
+
+
+
+.email-input[type="email"]:focus {
+    border: 1px solid #e0e0e0;
+}
+
+::placeholder {
+    color: gray;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+input:focus::placeholder {
+    opacity: 0;
+}
+
+input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    margin: 15px 0;
+    border-radius: 0px;
+}
+
+.label-checkbox {
+    font-size: 16px;
+    padding-left: 7px;
+}
+
+.email-btn-contaniner {
+    position: relative;
+}
+
+
+.email-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 0px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #0eb290;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.email-error {
+    text-align: left;
+    display: none;
+    /* visibility: hidden; */
+    width: 100%;
+    color: #a94442;
+    background-color: #f2dede;
+    padding: 7px 12px;
+    border-radius: 4px;
+
+    border: 1px solid #ebccd1;
+    ;
+}
+
+.email-error-2 {
+    margin-top: -7px;
+}
+
+.error-handler {
+    /* display: block; */
+}
+
+
+
+.checkbox {
+    font-size: 20px;
+}
+
+
+@media (max-width: 1024px) {
+    .subscribe-left-side h2 {
+        font-size: 15px;
+    }
+
+    .subscribe-left-side p {
+        font-size: 14px;
+    }
+
+    .email-input {
+        height: 48px;
+    }
+
+    .email-input::placeholder {
+        font-size: 13px;
+    }
+
+    .label-checkbox {
+        font-size: 12px;
+    }
+
+    .checkbox input[type=checkbox] {
+        width: 14px;
+        height: 14px
+    }
+
+    /* .email-button {
+        padding: 15px;
+
+    } */
+}

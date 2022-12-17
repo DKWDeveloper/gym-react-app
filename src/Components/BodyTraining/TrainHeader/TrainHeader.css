@@ -1,0 +1,37 @@
+.inner-left-img {
+    margin-top: 60px;
+    width: 51px;
+    height: 51px;
+}
+
+.inner-heading {
+    margin-top: 16px;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.inner-paragraph {
+    margin-top: 50px;
+    /* word-spacing: -5px; */
+    letter-spacing: 0px;
+    padding-right: 37px;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+@media (max-width: 1024px) {
+    
+
+    .inner-left-img {
+        width: 46px;
+        height: 46px;
+    }
+
+    .inner-heading {
+        font-size: 18px;
+    }
+
+    .inner-paragraph {
+        font-size: 15px;
+    }
+}

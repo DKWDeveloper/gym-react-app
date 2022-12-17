@@ -1,0 +1,56 @@
+.footer-part {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.footer-card-1 {
+    width: 33.33%;
+    padding: 20px 0px;
+    background-color: #0eb290;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon {
+    font-size: 70px;
+    color: #28806d;
+    text-align: center;
+}
+
+
+
+
+#colokbg {
+    background-color: #28806d;
+}
+
+
+
+.footer-sign {
+    line-height: 1.5;
+    margin: 0px 0px 0px 10px;
+    text-align: center;
+}
+
+.footer-card-inner {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.h5-footer {
+    color: #28806d;
+}
+
+.h2-footer {
+    color: #fff;
+}
+
+.clock-icon {
+    color: #4dd8c1;
+}

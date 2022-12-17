@@ -1,0 +1,519 @@
+/* This is only for NAVBAR-Media qery ----> A media query that is saying if the screen is less than 1049px then the .Nav-bar-inner class will
+have a width of 90%. */
+@media screen and (max-width: 1049px) {
+    .Nav-bar-inner {
+        width: 90%;
+    }
+
+}
+
+/* This part for span burger button */
+/* This is a media query that is saying if the screen is less than 919px then the .Nav-bar-inner-right
+ class will have a display of none and the .span-burger-btn class will have a display of block. */
+
+
+
+@media (max-width: 1025px) {
+
+    .first-container {
+
+        background-image: url('https://gym.oceanwp.org/wp-content/uploads/2022/03/gym-hero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+
+    .discover-title {
+        padding-top: 40px;
+        font-size: 32px;
+    }
+
+    .discover-para {
+        font-size: 16px;
+        padding-top: 14px;
+
+    }
+
+
+    .discover-button {
+        margin-top: 60px;
+    }
+
+
+    .img-1 {
+        width: 60px;
+        height: 60px;
+    }
+
+    .h3-title {
+        font-size: 15px;
+        /* padding: 16px 0px; */
+    }
+
+    .inner-body-column {
+        width: 70%;
+    }
+
+    .body-card-1 {
+        width: 32%;
+    }
+
+
+    .card-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .h2-card {
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .p-para {
+        padding: 30px 20px;
+        font-size: 14px;
+    }
+
+    
+
+    .right-side-img {
+        width: 100%;
+        /* height: 70vh; */
+    }
+
+    .card-heading h2 {
+        font-size: 21px;
+    }
+
+    .card-heading h4 {
+        font-size: 12px;
+    }
+
+    .card-price-doller {
+        font-size: 40px;
+    }
+
+
+    .card-content p {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .subscribe-left-side h2 {
+        /* font-size: ; */
+    }
+
+
+    .subscribe-left-side p {
+        font-size: px;
+    }
+
+    .footer-icon {
+        font-size: 50px;
+    }
+
+    .h2-footer {
+        font-size: 22px;
+    }
+
+    .part-5 {
+        width: 50%;
+    }
+
+
+
+    .card-social-icon-bg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .p-cnt {
+        font-size: 10px;
+    }
+
+    .h2-cnt {
+        font-size: 18px;
+    }
+
+    .social-cnt-5 {
+        margin-bottom: 20px;
+    }
+
+    .nav-social-imgs-5 {
+        font-size: 14px;
+    }
+
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    input[type=checkbox] {
+        width: 14px;
+        height: 14px
+    }
+
+    .label-checkbox {
+        font-size: 14px;
+    }
+
+    .h3-9 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .paragraph-9 {
+        font-size: 14px;
+    }
+
+    .card-bottom-part {
+        font-size: 11px;
+    }
+
+    .copyright {
+        font-size: 11px;
+    }
+
+    .responsive-nav-bar {
+
+        display: none;
+
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .backgound-overlay,
+    .first-container {
+        /* min-height: 670px; */
+        height: 100vh;
+    }
+
+    .discover-inner-container {
+        margin-top: 160px;
+    }
+
+    .discover-title {
+        font-size: 20px;
+    }
+
+
+    .button-2 {
+        display: block;
+        margin-top: 40px;
+    }
+
+    .inner-body-column {
+        width: 100%;
+    }
+
+
+
+    .inner-body-row {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .body-card-1 {
+        width: 70%;
+        margin-top: 30px;
+    }
+
+    .card-img {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .inner-leftside {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        /* justify-content: space-between; */
+    }
+
+
+    .innerleft-2 {
+        margin-left: 30px;
+        text-align: center;
+
+    }
+
+    .inner-left-img {
+        margin-right: 60px;
+    }
+
+    .inner-heading {
+        margin-right: 41px;
+        font-size: 15px;
+    }
+
+    .inner-paragraph,
+    .column-para {
+
+        font-size: 14px;
+    }
+
+    .cardinner-pic {
+        margin-left: 24px;
+    }
+
+    .card-inner-inner-cnt {
+        display: block;
+    }
+
+    .card-image {
+        margin-bottom: 12px;
+    }
+
+    .circuit-heading {
+        font-size: 15px;
+    }
+
+    .card-para {
+        font-size: 14px;
+    }
+
+    .right-side-cnt {
+        display: none;
+    }
+
+    .img-cnt-5 {
+        width: 90%;
+    }
+
+    .cutomer-testmonnials {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cutomer-testmonnials-1 {
+        width: auto;
+        font-size: 15px;
+    }
+
+    .card-cnt {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    div.card-no-1 {
+        width: 80%;
+        margin: 15px auto;
+    }
+
+
+
+
+    .card-heading h2 {
+        font-size: 17px;
+    }
+
+    .card-heading h4 {
+        font-size: 12px;
+    }
+
+    .card-price-doller {
+        font-size: 35px;
+    }
+
+    .card-content p {
+        padding: 12px 0px;
+        font-size: 12px;
+    }
+
+    .card-button {
+        font-size: 9px;
+    }
+
+    .subscribe-fields {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subscribe-left-side {
+        text-align: center;
+        width: 100%;
+    }
+
+    .email-btn-contaniner {
+        margin-top: 20px;
+    }
+
+    .main-card-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-img-container-9 {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .footer-icon {
+        font-size: 1.8rem;
+    }
+
+    .h5-footer {
+        font-size: 0.8rem
+    }
+
+    .h2-footer {
+        font-size: 0.7rem;
+    }
+
+    .footer-logo {
+        width: 20%;
+    }
+
+    .h1-gym-club {
+        font-size: 1.2rem;
+    }
+
+    .p-contact {
+        font-size: 0.9rem;
+    }
+
+    .copyright-fontsize {
+        font-size: 0.6rem;
+    }
+
+
+    .card-social-icon-bg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .nav-social-imgs-5 {
+        font-size: 12px;
+    }
+
+
+
+    /* .subscribe-left-side h2 {
+        font-size: 15px;
+    } */
+
+    /* .subscribe-left-side p {
+        font-size: 13px;
+    } */
+
+    /* ::placeholder{
+        font-size: 12px;
+    } */
+
+    /* input[type=checkbox] {
+        width: 12px;
+        height: 12px
+    } */
+
+    /* .label-checkbox{
+        font-size: 12px;
+    } */
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 715px) {
+
+    /* .Nav-bar-inner-right {
+        display: none;
+    }
+
+    .span-burger-btn {
+        display: block;
+    } */
+
+
+    /* .card-img {} */
+
+    .h2-card {
+
+        font-size: 15px;
+
+    }
+
+    .p-para {
+        font-size: 12px;
+        padding: 15px 15px;
+    }
+
+    .footer-card-inner {
+        flex-direction: column;
+    }
+
+    .part-5 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+
+    .Nav-bar-inner-right {
+        display: none;
+    }
+
+    .span-burger-btn {
+        display: block;
+    }
+
+    .footer-card-inner {
+        flex-direction: column;
+    }
+
+    .footer-sign {
+        margin: 10px 0px 0px 0px;
+    }
+}
+
+
+.span-burger-btn {
+    margin: 0 0px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media (max-width: 980px) {
+
+    .Nav-bar-inner-right {
+        display: none;
+    }
+
+    .span-burger-btn {
+
+        display: block;
+    }
+
+    #click:checked~#burger-span ::before {
+        content: "\f00d";
+    }
+
+    .responsive-nav-bar {
+
+        display: block;
+        margin-top: -510px;
+
+    }
+
+}
