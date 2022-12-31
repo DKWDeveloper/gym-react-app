@@ -17,7 +17,7 @@ const Profile = ({ position, top, left, transform }) => {
         alt=""
       />
       <Link to="/login">
-        <span className="reg-span">Sign/Register</span>
+        <span className="reg-span">Sign In/Register</span>
       </Link>
     </div>
   );

@@ -8,9 +8,9 @@ import { useProSidebar } from "react-pro-sidebar";
 import Profile from "./Profile/Profile";
 import "./HeaderMediaQuery.css";
 import NavSlider from "./NavSlider/NavSlider";
+import Cart from "./Cart/Cart";
 
 export default function Header() {
-  
   const [navbar, setNavbar] = useState(false);
 
   // useEffect(() => {
@@ -62,7 +62,11 @@ export default function Header() {
               <ul className="Nav-menu-list display">
                 {/*<li style={{color: "yellow"}}>dddd{values.name}</li> */}
                 {HEADER.map((list, index) => {
-                  return <List key={index} menu={list.menu} to={list.to} />;
+                  return (
+                    <List key={index} menu={list.menu} to={list.to}>
+                      <p>My name p</p>
+                    </List>
+                  );
                 })}
               </ul>
               <Link className="search-a" to="/">
@@ -78,6 +82,9 @@ export default function Header() {
                                 <Link className="youtube-hover" to="/yt"> <i
                             className=" nav-social-imgs1 display nav-social-bg-3 fa-brands fa-youtube"></i></Link> */}
               </div>
+
+              <Cart />
+              {/* hello */}
             </div>
           </div>
           <input type="checkbox" id="click" />

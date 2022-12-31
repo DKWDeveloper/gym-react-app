@@ -24,7 +24,7 @@ const Footer = () => {
                             FooterSocialdata.map((d, i) => {
                                 return (
                                     <FooterSocialLink
-                                    key = {i}
+                                        key={i}
                                         social={d.socialIcon}
                                     />
                                 );

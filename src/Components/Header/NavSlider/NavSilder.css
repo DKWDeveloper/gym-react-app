@@ -15,11 +15,14 @@
 }
 
 .toggle-close {
-    position: absolute;
-    left: 50%;
-    bottom: 20px;
+    text-align: center !important;
+    /* margin: 0  auto !important; */
+    /* position: relative; */
+    /* left: 50%; */
+    /* right: 50%; */
     /* top: 50px; */
-    transform: translate(-50%, -50%);
+    /* top: 50px; */
+    /* transform: translate(-50%, -50%); */
 
 
 }
@@ -45,7 +48,7 @@
     /* padding-top: 5px; */
 }
 
-.react-trainers{
+.react-trainers {
     font-size: 20px;
 }
 
@@ -60,6 +63,10 @@
     font-size: 14px;
 }
 
-.css-1bdadyq{
+.css-1ys30cu {
+    border: none !important;
+}
+
+.css-1bdadyq {
     height: 40px !important;
 }

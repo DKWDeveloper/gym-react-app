@@ -15,7 +15,10 @@ import MainCard from "../Pages/Card/MainCard";
 import Home from "../Pages/Home/Home";
 import { discoverData } from "../assets/values";
 
-function HomePage() {
+function HomePage({ products, addProduct }) {
+
+  // console.log(products);
+  // console.log(addProduct("add"));
   return (
     <Fragment>
       <div className="first-container">
@@ -42,7 +45,7 @@ function HomePage() {
       <Discover />
       <Customer />
       <BodyTraining1 />
-      <PriceCard />
+      <PriceCard products={products} addProduct={addProduct} />
       <Subscriber />
       <News />
       <Detail />

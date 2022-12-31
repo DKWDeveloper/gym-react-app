@@ -36,7 +36,7 @@ const Subscriber = () => {
             </div>
 
             <div className="checkbox display-vertical-center">
-              <input type="checkbox" id="check" />
+              <input className="subcriber" type="checkbox" id="check" />
               <label className="label-checkbox">Accept GDPR Terms</label>
             </div>
 

@@ -121,6 +121,7 @@ div.card-no-1:hover {
 }
 
 .card-button {
+    cursor: pointer;
     font-weight: 600;
     color: #fff;
     margin-top: 5px;

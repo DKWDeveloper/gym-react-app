@@ -3,6 +3,7 @@ import Card from './Card'
 import { card } from '../../assets/values';
 
 function getData(obj) {
+    // console.log(obj)
     return (
         <Card
             id={obj.id}

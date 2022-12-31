@@ -4,7 +4,8 @@ import { BodyData, CardDetail } from "../../assets/values";
 import HomeHeader from "../HomeHeader/HomeHeader";
 import Pcard from "./Pcard/Pcard";
 
-const PriceCard = () => {
+const PriceCard = ({ products, addProduct }) => {
+  // console.log(products)
   return (
     <div className="main-container-8 display-hori-center">
       <div className="inner-cnt-8">
@@ -18,6 +19,8 @@ const PriceCard = () => {
           {CardDetail.map((CardData) => {
             return (
               <Pcard
+                addProduct={addProduct}
+                products={products}
                 display={CardData.display}
                 key={CardData.id}
                 plan={CardData.plan}

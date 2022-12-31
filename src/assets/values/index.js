@@ -12,30 +12,36 @@ const HEADER = [
 
   {
     id: 2,
+    menu: "PRODUCT",
+    to: "/products",
+  },
+
+  {
+    id: 3,
     menu: "ABOUT",
     to: "/about-us",
   },
 
   {
-    id: 3,
+    id: 4,
     menu: "MEMBERSHIP",
     to: "/membership",
   },
 
   {
-    id: 4,
+    id: 5,
     menu: "TRAINERS",
     to: "/trainers",
   },
 
   {
-    id: 5,
+    id: 6,
     menu: "NEWS",
     to: "/news",
   },
 
   {
-    id: 6,
+    id: 7,
     menu: "CONTACT",
     to: "/contact",
   },
@@ -428,6 +434,159 @@ export const FooterSocialdata = [
   {
     id: 5,
     socialIcon: "nav-social-imgs-5 nav-social-imgs3 fa-brands fa-youtube",
+  },
+];
+
+export const ProductData = [
+  {
+    id: 1,
+    product_image: "Images/supplement.png",
+    product_title: "Whey Protein",
+    about_product:
+      "Optimum Nutrition (ON) Gold Standard 100% Whey Protein Powder - 5 lbs, 2.27 kg (Double Rich Chocolate)",
+    product_price: "6,884",
+  },
+
+  {
+    id: 2,
+    product_image: "Images/supplement2.png",
+    product_title: "Bon ISO Whey",
+    about_product:
+      "Bon ISO Whey 100% Protein Isolate|1 kg, 33 Servings |Muscle Strength and Bone Health|24g",
+    product_price: "3,499",
+  },
+
+  {
+    id: 3,
+    product_image: "Images/bigmuscles3.png",
+    product_title: "Bigmuscles",
+    about_product:
+      "Bigmuscles Nutrition Essential Whey Protein 1Kg [Dutch Chocolate] | 24g Protein/serving",
+    product_price: "975",
+  },
+
+  {
+    id: 4,
+    product_image: "Images/MuscleBlaze4.png",
+    product_title: "MuscleBlaze Raw Whey Protein",
+    about_product:
+      "MuscleBlaze Raw Whey Protein Concentrate 80% with Added Digestive Enzymes, Labdoor USA",
+    product_price: "2,199",
+  },
+
+  {
+    id: 5,
+    product_image: "Images/Dumbbells-remove.png",
+    product_title: "RUBX Rubber",
+    about_product:
+      "RUBX Rubber Coated Professional Exercise Hex Fixed Dumbbells (Pack of Two)",
+    product_price: "1,599",
+  },
+
+  {
+    id: 6,
+    product_image: "Images/Dumbbells10kg-remove.png",
+    product_title: "SPIRO PVC (Round/Hex)",
+    about_product:
+      "SPIRO PVC (Round/Hex) Dumbbells (5 Kg. X 2 = 10 Kg) Pack of 2 for Home Gym Equipment Fitness Barbell|Gym Exercise|Home Workout | Fitness Kit|Dumbbells Weights for Whole Body Workout",
+    product_price: "82",
+  },
+
+  {
+    id: 7,
+    product_image: "Images/StraussHand_Grip.png",
+    product_title: "Strauss Adjustable Hand Grip",
+    about_product: "Strauss Adjustable Hand Grip Strengthener, (Black/Grey)",
+    product_price: "206",
+  },
+
+  {
+    id: 8,
+    product_image: "Images/Hand_grip.png",
+    product_title: "Hand Grip",
+    about_product:
+      "Boldfit Adjustable Hand Grip Strengthener, Hand Gripper for Men & Women for Gym Workout Hand Exercise Equipment to Use in Home for Forearm Exercise, Finger Exercise Power Gripper",
+    product_price: "199",
+  },
+];
+
+export const SideImage = [
+  {
+    id: 0,
+    img: "Images/wheySmallr.png",
+  },
+
+  {
+    id: 1,
+    img: "Images/wheySmallr.png",
+  },
+
+  {
+    id: 2,
+    img: "Images/wheySmallr.png",
+  },
+];
+
+export const tableData = [
+  {
+    id: 0,
+    tableName: "Brand",
+    tableData: "OPTIMUM NUTRITION",
+  },
+  {
+    id: 1,
+    tableName: "Flavour",
+    tableData: "Double Rich Chocolate",
+  },
+
+  {
+    id: 2,
+    tableName: "Diet Type",
+    tableData: "Double Rich Chocolate",
+  },
+
+  {
+    id: 3,
+    tableName: "Protein Source",
+    tableData: "Whey",
+  },
+
+  {
+    id: 4,
+    tableName: "Net Quantity",
+    tableData: "2270.0 gram",
+  },
+
+  {
+    id: 5,
+    tableName: "Item Weight",
+    tableData: "5 Pounds",
+  },
+
+  {
+    id: 6,
+    tableName: "Recommended",
+    tableData: "Pre-workout",
+  },
+];
+
+export const aboutData = [
+  {
+    id: 1,
+    about:
+      "Gold Standard 100% Whey Blend – 24g blended protein consisting of whey protein isolate, whey protein concentrate, and whey peptides/hydrolysates to support lean muscle mass. Primary protein source is Isolate, they don't call it the Gold Standard of quality for nothing",
+  },
+
+  {
+    id: 2,
+    about:
+      "Gold Standard 100% Whey Blend – 24g blended protein consisting of whey protein isolate, whey protein concentrate, and whey peptides/hydrolysates to support lean muscle mass. Primary protein source is Isolate, they don't call it the Gold Standard of quality for nothing",
+  },
+
+  {
+    id: 3,
+    about:
+      "Gold Standard 100% Whey Blend – 24g blended protein consisting of whey protein isolate, whey protein concentrate, and whey peptides/hydrolysates to support lean muscle mass. Primary protein source is Isolate, they don't call it the Gold Standard of quality for nothing",
   },
 ];
 

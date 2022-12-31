@@ -9,7 +9,7 @@ const Register = () => {
                 <div className='login-box'>
                     <img className='brand-logo' src='https://gym.oceanwp.org/wp-content/uploads/2022/04/fitness-1.png' alt='logo' />
                     <input autoComplete="off" className='input-field' type="email" placeholder='Enter your email' />
-                    <input autoComplete="off" className="input-field" type="password" placeholder='Enter your password' />
+                    <input autoComplete="off" className="input-field" type="text" placeholder='Enter your password' />
                     <input autoComplete="off" className="input-field" type="password" placeholder='Confirm Password' />
                     <button type='submit' className='input-field reg-btn'>Register</button>
 

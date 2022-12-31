@@ -2,6 +2,8 @@ import React from "react";
 import "./Pcard.css";
 
 const Pcard = ({
+  products,
+  addProduct,
   display,
   plan,
   basicPlan,
@@ -13,6 +15,7 @@ const Pcard = ({
   Personal,
   extra,
 }) => {
+  // console.log("pricecard_props", products)
   return (
     <div className="card-no-1 display-column-space">
       <div className="ribbon" style={{ display: display }}>
@@ -60,7 +63,7 @@ const Pcard = ({
           {extra}
         </p>
       </div>
-      <div className="card-button">CHOOSE PLAN</div>
+      <div className="card-button" onClick={addProduct}>CHOOSE PLAN</div>
     </div>
   );
 };

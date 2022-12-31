@@ -62,7 +62,7 @@ input:focus::placeholder {
     opacity: 0;
 }
 
-input[type=checkbox] {
+.subcriber[type=checkbox] {
     width: 16px;
     height: 16px;
     margin: 15px 0;

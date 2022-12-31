@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const List = ({ menu, to }) => {
+const List = ({ menu, to, children }) => {
   return (
     <div>
       <li className="menu-options">
@@ -9,6 +9,7 @@ const List = ({ menu, to }) => {
           {menu}
         </Link>
       </li>
+      {/* {children} */}
     </div>
   );
 };
