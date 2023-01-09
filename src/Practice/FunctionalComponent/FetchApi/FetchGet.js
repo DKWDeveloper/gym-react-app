@@ -32,11 +32,11 @@ function FetchGet() {
     await getData();
   }, []);
 
-  const onClick = () => {};
+  const onClick = () => { };
 
   return (
     <div>
-      <h2 onClick={() => {}}>FetchGet</h2>
+      <h2 onClick={() => { }}>FetchGet</h2>
       {users.map((item, index) => {
         return (
           <div key={index}>

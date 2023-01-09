@@ -36,6 +36,7 @@ const Product = ({ products, addProduct }) => {
                 product_title={data.product_title}
                 about_product={data.about_product}
                 product_price={data.product_price}
+                Quantity={data.Quantity}
               />
             );
           })}

@@ -6,9 +6,8 @@ import { tableData } from "../../../assets/values";
 import ProducSpecsTable from "./ProducSpecsTable";
 import ProductDeliveryIcon from "./ProductDeliveryIcon";
 import AboutItem from "./AboutItem";
-import { Link, useLocation, useParams } from "react-router-dom";
-import { useEffect } from "react";
-import Product from "../Product";
+import { Link, useLocation } from "react-router-dom";
+
 
 
 
@@ -17,8 +16,7 @@ import Product from "../Product";
 function ProductDetailCard({ products, addProduct }) {
 
 
-  // console.log(addProduct("add"))
-  // console.log(products)
+
 
   const location = useLocation();
   const SideImage = [
@@ -39,17 +37,21 @@ function ProductDetailCard({ products, addProduct }) {
   ];
 
 
-
+  const ProductId = location.state.id;
   const ProductTitle = location.state.Title;
   const ProductImage = location.state.Image;
   const ProductPrice = location.state.Price
   const ProductAbout = location.state.About
 
+
   const productObj = {
+    ProductId: location.state.id,
     ProductTitle: location.state.Title,
     ProductImage: location.state.Image,
     ProductPrice: location.state.Price,
-    ProductAbout: location.state.About
+    ProductAbout: location.state.About,
+    Quantity: location.state.Quantity
+
   }
 
 

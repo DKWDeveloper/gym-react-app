@@ -444,7 +444,8 @@ export const ProductData = [
     product_title: "Whey Protein",
     about_product:
       "Optimum Nutrition (ON) Gold Standard 100% Whey Protein Powder - 5 lbs, 2.27 kg (Double Rich Chocolate)",
-    product_price: "6,884",
+    product_price: 6884,
+    Quantity: 0 + 1
   },
 
   {
@@ -453,7 +454,8 @@ export const ProductData = [
     product_title: "Bon ISO Whey",
     about_product:
       "Bon ISO Whey 100% Protein Isolate|1 kg, 33 Servings |Muscle Strength and Bone Health|24g",
-    product_price: "3,499",
+    product_price: 3499,
+    Quantity: 1
   },
 
   {
@@ -462,7 +464,8 @@ export const ProductData = [
     product_title: "Bigmuscles",
     about_product:
       "Bigmuscles Nutrition Essential Whey Protein 1Kg [Dutch Chocolate] | 24g Protein/serving",
-    product_price: "975",
+    product_price: 975,
+    Quantity: 1
   },
 
   {
@@ -470,8 +473,9 @@ export const ProductData = [
     product_image: "Images/MuscleBlaze4.png",
     product_title: "MuscleBlaze Raw Whey Protein",
     about_product:
-      "MuscleBlaze Raw Whey Protein Concentrate 80% with Added Digestive Enzymes, Labdoor USA",
-    product_price: "2,199",
+      "MuscleBlaze Raw Whey Protein Concentrate 8f0% with Added Digestive Enzymes, Labdoor USA",
+    product_price: 2199,
+    Quantity: 1
   },
 
   {
@@ -480,7 +484,8 @@ export const ProductData = [
     product_title: "RUBX Rubber",
     about_product:
       "RUBX Rubber Coated Professional Exercise Hex Fixed Dumbbells (Pack of Two)",
-    product_price: "1,599",
+    product_price: 1599,
+    Quantity: 1
   },
 
   {
@@ -489,7 +494,8 @@ export const ProductData = [
     product_title: "SPIRO PVC (Round/Hex)",
     about_product:
       "SPIRO PVC (Round/Hex) Dumbbells (5 Kg. X 2 = 10 Kg) Pack of 2 for Home Gym Equipment Fitness Barbell|Gym Exercise|Home Workout | Fitness Kit|Dumbbells Weights for Whole Body Workout",
-    product_price: "82",
+    product_price: 82,
+    Quantity: 1
   },
 
   {
@@ -497,7 +503,8 @@ export const ProductData = [
     product_image: "Images/StraussHand_Grip.png",
     product_title: "Strauss Adjustable Hand Grip",
     about_product: "Strauss Adjustable Hand Grip Strengthener, (Black/Grey)",
-    product_price: "206",
+    product_price: 206,
+    Quantity: 1
   },
 
   {
@@ -506,7 +513,8 @@ export const ProductData = [
     product_title: "Hand Grip",
     about_product:
       "Boldfit Adjustable Hand Grip Strengthener, Hand Gripper for Men & Women for Gym Workout Hand Exercise Equipment to Use in Home for Forearm Exercise, Finger Exercise Power Gripper",
-    product_price: "199",
+    product_price: 199,
+    Quantity: 1
   },
 ];
 

@@ -21,11 +21,12 @@ const ProductCard = (props) => {
 
     navigate("/productcard", {
       state: {
-
+        id: props.id,
         Title: props.product_title,
         Image: props.product_image,
         Price: props.product_price,
-        About: text
+        About: text,
+        Quantity: props.Quantity
       }
     })
 

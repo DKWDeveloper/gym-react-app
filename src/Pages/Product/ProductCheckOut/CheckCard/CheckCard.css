@@ -1,0 +1,28 @@
+.product-quantity {
+    /* background-color: red; */
+    display: flex;
+
+    /* border: 1px solid yellow; */
+}
+
+.quantity-btn {
+    width: 20px;
+    height: 20px;
+
+    /* padding: 4px; */
+    margin: 0px 6px;
+    border: none;
+    background-color: #0eb290;
+    font-size: 8px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.data-quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto 0px;
+    /* height: auto; */
+}

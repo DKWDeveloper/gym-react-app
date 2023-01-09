@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu, MenuItem } from "react-pro-sidebar";
+import { useProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Link } from "react-router-dom";
 import {
   FaAddressCard,
@@ -23,15 +23,14 @@ export const SliderListData = [
 ];
 
 const SliderListItem = () => {
+  const { collapseSidebar } = useProSidebar();
+
   return (
     <Menu style={{ marginTop: "100px", fontFamily: "san-sarif" }}>
       {SliderListData.map((item, index) => {
         const Icon = item.icon;
         return (
-          <MenuItem
-            key={"listItem_" + index}
-            className="list-color"
-            routerLink={<Link to={item.link} />}>
+          <MenuItem key={"listItem_" + index} className="list-color" routerLink={<Link to={item.link} />} onClick={() => collapseSidebar()}>
             <Icon className="react-icon" />
             <span className="m-menu">{item.name}</span>
           </MenuItem>

@@ -12,7 +12,7 @@ function TodoList() {
         // setlistData([...listData, activity])
         // console.log("L;;", listData);
 
-        //This is sync work means take some time
+        //This is async work means take some time
         setlistData((listData) => {
             const updateList = [...listData, activity]
             console.log(updateList)

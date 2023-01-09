@@ -1,6 +1,6 @@
 .cart-div {
     /* border: 1px solid red; */
-    font-size: 40px;
+    font-size: 23px;
     color: white;
     padding-left: 20px;
     padding-top: auto;
@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 100;
+    /* font-weight: 100; */
     position: relative;
 
 }
@@ -16,7 +16,7 @@
 .cart-value {
     position: absolute;
 
-    right: 8px;
+    /* right: 8px; */
     bottom: 18px;
     font-size: 11px;
 

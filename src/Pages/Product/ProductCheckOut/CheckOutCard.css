@@ -93,6 +93,9 @@
 
 
 .product-remove-div {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
     margin-top: 8px;
 }
 
@@ -112,6 +115,7 @@
 }
 
 .checkout-right-div {
+    padding: 8px;
     width: 28%;
     height: 200px;
     background-color: #EAEDED;

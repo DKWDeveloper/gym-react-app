@@ -409,3 +409,27 @@ li a:hover {
 .nav-social-imgs-5 {
     font-size: 17px;
 }
+
+.logout-div {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+
+}
+
+.logout-btn {
+    width: 50px;
+    font-size: 10px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #0eb290;
+    color: white;
+}
+
+.profile-name {
+    display: flex;
+    justify-content: center;
+}

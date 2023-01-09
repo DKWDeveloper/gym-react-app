@@ -1,7 +1,7 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import "./Header.css";
 import HEADER from "../../assets/values";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import List from "./List/List";
 
 import { useProSidebar } from "react-pro-sidebar";
@@ -10,8 +10,26 @@ import "./HeaderMediaQuery.css";
 import NavSlider from "./NavSlider/NavSlider";
 import Cart from "./Cart/Cart";
 
-export default function Header() {
+export default function Header({ products }) {
   const [navbar, setNavbar] = useState(false);
+  const [logoutHide, setLogoutHide] = useState(false)
+
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (localStorage.getItem('islogged')) {
+      setLogoutHide(true)
+    }
+  }, [])
+
+
+  const removeLogin = () => {
+    navigate('/login')
+    // const hide = true
+
+    localStorage.clear()
+    window.location.reload();
+    // sessionStorage.clear();
+  }
 
   // useEffect(() => {
   //   console.log("init");
@@ -69,11 +87,15 @@ export default function Header() {
                   );
                 })}
               </ul>
-              <Link className="search-a" to="/">
+              {/* <Link className="search-a" to="/">
                 <i className="search-s nav-search-img display-vertical-center fa-solid fa-magnifying-glass"></i>
-              </Link>
+              </Link> */}
               <div className="nav-social-cnt display-hori-center">
-                <Profile />
+
+
+
+                {/* <Cart products={products} /> */}
+
 
                 {/* <Link className="social-hover" to=""><i
                                     className=" nav-social-imgs1 display nav-social-bg-1 fa-brands fa-twitter"></i></Link>
@@ -82,9 +104,17 @@ export default function Header() {
                                 <Link className="youtube-hover" to="/yt"> <i
                             className=" nav-social-imgs1 display nav-social-bg-3 fa-brands fa-youtube"></i></Link> */}
               </div>
-
-              <Cart />
+              <Profile />
+              {logoutHide ? <div className="logout-div">
+                <button className="logout-btn" onClick={removeLogin}>Logout</button>
+              </div> : <Link to="/login">
+                <div className="logout-div">
+                  <button className="logout-btn">Sign In</button></div></Link>}
+              {/* {logoutHide ? <h1 style={{ color: "white" }}>Show</h1> : ''} */}
               {/* hello */}
+              <Cart products={products} />
+
+
             </div>
           </div>
           <input type="checkbox" id="click" />

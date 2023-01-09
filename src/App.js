@@ -2,6 +2,7 @@ import { Fragment, useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import HomePage from "./Common/HomePage";
+import ProtectedRoute from "./Common/ProtectedRoute";
 import Header from "./Components/Header/Header";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
@@ -13,41 +14,124 @@ import CheckOutCard from "./Pages/Product/ProductCheckOut/CheckOutCard";
 import ProductDetailCard from "./Pages/Product/ProductDetailCard/ProductDetailCard";
 import Register from "./Pages/Register/Register";
 import Trainers from "./Pages/Trainers/Trainers";
-import TodoList from "./Practice/FunctionalComponent/TodoList/TodoList";
+// import FetchData from "./Practice/FunctionalComponent/FetchApi/FetchData";
+// import TodoList from "./Practice/FunctionalComponent/TodoList/TodoList";
 // import FetchGet from "./Practice/FunctionalComponent/FetchApi/FetchGet";
-// import LocalStorage from "./Practice/FunctionalComponent/LocalStorage";
+// import NewsApi from "./Practice/FunctionalComponent/FetchApi/NewsApi";
+import LocalStorage from "./Practice/FunctionalComponent/LocalStorage";
 // import FetchPost from "./Practice/FunctionalComponent/FetchApi/FetchPost";
 // import FetchPut from "./Practice/FunctionalComponent/FetchApi/FetchPut";
-
 // import ComponentDidUpdate from "./Practice/ClassComponent/ComponentDidUpdate";
 
 function App() {
   const [products, setProducts] = useState([]);
-  const [totalPrice, setTotalPrice] = useState(0);
+  const [totalPrice, setTotalPrice] = useState(999);
+  // const [counter, setCounter] = useState(0)
 
-  function totaPriceOfproduct() {
-    // console.log("This is for price only", products)
+
+  // Subtotal()
+
+
+  // products.map((item, i) => console.log(item.ProductPrice))
+
+
+  function Subtotal() {
+    let sum = 0;
+    products.forEach((item, i) => {
+      sum = sum + item.ProductPrice * item.Quantity;
+      // return sum;
+      // setTotalPrice(sum)
+    });
+    return sum;
   }
+
+  useEffect(() => {
+    setTotalPrice(Subtotal())
+    // products.map((item, i) => console.log(item.ProductPrice))
+  }, [products])
+
+  // useEffect(() => {
+  //   console.log("using use useEffect")
+  // }, [])
+
+
+
+
+
+  // function totaPriceOfproduct() {
+  //   for (let i = 0; i < products.length; i++) {
+  //     console.log(products[1].ProductPrice)
+
+  //   }
+  //   // console.log("This is for price only", products)
+  // }
 
   // totaPriceOfproduct()
 
 
 
   function addProduct(state, parameter2, index) {
-
-
-
-
     if (state === "add") {
       setProducts([...products, parameter2])
-      //  console.log(products)
+
+
+      // let pros = [...products];
+
+
+      // let index = pros.findIndex((item) => {
+      //   console.log("my item", item)
+      //   if (item.ProductId === parameter2.ProductId) {
+      //     return true;
+      //   }
+      // })
+
+      // if (index > -1) {
+      //   // setProducts({ ...item })
+      // } else {
+
+      // }
+
+      // let modArray = pros.map((item, index) => {
+      //   if (item.ProductId === parameter2.ProductId) {
+      //     return { ...item, Quantity: item.Quantity + 1 }
+      //   }
+      // })
+
+      // setProducts(pros)
+
+
+
+
+      // setProducts(parameter2.reduce((acc, curr) => acc.includes(curr) ? acc : [...acc, curr], ...products))
+      // const arrProduct = [...products, parameter2]
+
+
+
+      // setProducts(products.filter((data, ind) => data.ProductId !== parameter2.ProductId ? { ...data } : data))
+      // setProducts(arrProduct.filter((item, ind) => item.ProductId !== parameter2.productId ? { ...item } : item))
+      // setProducts([...new Set(arrProduct)])
+      // setProducts(arrProduct.map((data, index) => arrProduct.indexOf(data) === index, console.log(data)))
+      // console.log("check what is this", [...products, parameter2])
+
     }
-    if (state === "delete") {
-      // console.log("another", parameter2)
+    else if (state === "delete") {
       setProducts(parameter2.filter((d, i) => index !== i))
-      // parameter2.filter(p => p.id !== products.id)
-      // setProducts(products.splice())
-    } else {
+    }
+    else if (state === "increase") {
+
+      let pros = [...products];
+
+
+
+      setProducts(pros.map((item, index) => item.ProductId === parameter2.ProductId ? { ...item, Quantity: item.Quantity + 1 } : item))
+
+    }
+    else if (state === "decrease") {
+
+
+      setProducts([...products].map((item, index) => item.id === parameter2.id ? { ...item, Quantity: item.Quantity - (item.Quantity > 1 ? 1 : 0) } : item))
+    }
+    else {
       console.log("Do nothing")
     }
   }
@@ -64,15 +148,12 @@ function App() {
 
   const location = useLocation();
 
-  // if (location.pathname === "/login" || location.pathname === "/reg") {
-  //   console.log("login page");
-  // } else {
-  //   console.log("reg page");
-  // }
+
 
   return (
     <Fragment>
-      {/*<FetchGet /> */}
+      {/* <NewsApi /> */}
+      {/* <FetchGet /> */}
       {/*<FetchPost /> */}
 
       {/*<FetchPut/>*/}
@@ -83,10 +164,12 @@ function App() {
         {location.pathname === "/login" || location.pathname === "/register" ? (
           ""
         ) : (
-          <Header />
+          <Header products={products} />
         )}
 
         <Routes>
+          {/* <Route path="/" element={<ProtectedRoute Component={<HomePage products={products} addProduct={addProduct} />} />} /> */}
+
           <Route path="/" element={<HomePage products={products} addProduct={addProduct} />} />
           <Route path="/products" element={<Product products={products} addProduct={addProduct} />} />
           <Route path="/login" element={<Login />} />
@@ -96,10 +179,11 @@ function App() {
           <Route path="/trainers" element={<Trainers />} />
           <Route path="/news" element={<LatestNews />} />
           <Route path="/contact" element={<Contact />} />
-
           <Route path="/productcard" element={<ProductDetailCard products={products} addProduct={addProduct} />} />
-          <Route path="/addproduct" element={<CheckOutCard products={products} addProduct={addProduct} />} />
+          <Route path="/addproduct" element={<CheckOutCard products={products} addProduct={addProduct} totalPrice={totalPrice} />} />
           {/* <Route path="/list" element={<TodoList />} /> */}
+          {/* <Route path="/list" element={<FetchData />} /> */}
+          <Route path="/local" element={<LocalStorage />} />
         </Routes>
       </div>
     </Fragment>

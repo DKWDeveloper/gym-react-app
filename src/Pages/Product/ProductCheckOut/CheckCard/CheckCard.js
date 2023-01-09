@@ -1,9 +1,13 @@
 import React from "react";
+import './CheckCard.css'
+import { HiMinusSm } from 'react-icons/hi'
+import { BsPlusLg } from 'react-icons/bs'
 // import checkoutproduct from "../../../../assets/images/checkoutproduct.png";
 
 function CheckCard({ products, addProduct }) {
 
-  // console.log("checkCard data", products[0].ProductPrice)
+
+  // console.log("checkCard data", products[0].Quantity)
 
 
   // console.log("map function ", products.map((data) => { return (data) }))
@@ -29,11 +33,20 @@ function CheckCard({ products, addProduct }) {
           <p className="flavor-p">Flavor:Chocolate</p>
           <div className="product-remove-div">
             <button className="product-remove" onClick={() => addProduct("delete", products, index)}>Remove</button>
+            <div className="product-quantity">
+              <button className="quantity-btn quantity-decrease" onClick={() => addProduct("decrease", data)}><HiMinusSm size={20} /></button>
+              <span className="data-quantity">{data.Quantity}</span>
+              <button className="quantity-btn quantity-increase" onClick={() => addProduct("increase", data)}><BsPlusLg size={12} /></button>
+
+            </div>
           </div>
+
         </div>
       </div>
       {/* <hr /> */}
       <div className="horizontal-line2"></div>
+
+
     </div>);
   })
 

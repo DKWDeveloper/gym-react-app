@@ -1,49 +1,105 @@
 import React from "react";
+import { useEffect } from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../Register/Register.css";
 
 const Login = () => {
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
-  const [userErr, setUserErr] = useState(false);
-  const [passErr, setPassErr] = useState(false);
+  const [userError, setUserError] = useState('');
+  const [passwordError, setPasswordError] = useState('');
 
-  const [name, setName] = useState("");
-  const [pass, setPass] = useState("");
+  const navigate = useNavigate();
 
-  const handleClick = () => {
-    console.log("hello");
-  };
+  function Login() {
+    localStorage.setItem("islogged", true)
+    // localStorage.setItem("User", user)
+    // localStorage.setItem("Password", password)
+    navigate('/')
 
-  const submitForm = (e) => {
-    // console.log("this is event", e)
+  }
 
+
+  function userHandler(e) {
+    setUserError('')
+    setUser(e.target.value)
+
+  }
+
+  function passwordHandler(e) {
+    setPasswordError('')
+    setPassword(e.target.value)
+
+  }
+
+  function handleFromSubmit(e) {
+    // console.log(e)
+    Login();
     e.preventDefault();
-  };
+    // if (user !== "") {
 
-  function userHandler(event) {
-    const val = event.target.value;
-    if (val.length < 2) {
-      setUserErr(true);
-    } else {
-      setUserErr(false);
-    }
+
+    // }
+    // else {
+
+    //   setUserError("Email is required")
+    // }
+
+    // if (password !== "") {
+
+    // }
+    // else {
+    //   setPasswordError("Password is required")
+    // }
   }
 
-  function passwordHandler(event) {
-    const passval = event.target.value;
-    if (passval.length < 4) {
-      setPassErr(true);
-    } else {
-      setPassErr(false);
-    }
-  }
+  // const navigate = useNavigate();
+  // // useEffect(() => {
+  // let login = localStorage.getItem("islogged");
+  // if (login) {
+  //   navigate('/')
+  // }
+  // }, [])
+
+
+
+
+  // const [name, setName] = useState("");
+  // const [pass, setPass] = useState("");
+
+  // const handleClick = () => {
+  //   console.log("hello");
+  // };
+
+  // const submitForm = (e) => {
+  //   // console.log("this is event", e)
+
+  //   e.preventDefault();
+  // };
+
+  // function userHandler(event) {
+  //   const val = event.target.value;
+  //   if (val.length < 2) {
+  //     setUserErr(true);
+  //   } else {
+  //     setUserErr(false);
+  //   }
+  // }
+
+  // function passwordHandler(event) {
+  //   const passval = event.target.value;
+  //   if (passval.length < 4) {
+  //     setPassErr(true);
+  //   } else {
+  //     setPassErr(false);
+  //   }
+  // }
 
   // onSubmit={(e) => { e.preventDefault() }}
 
   return (
-    <form onSubmit={submitForm}>
+    <form action="" onSubmit={handleFromSubmit}>
       <div className="container">
         <div className="login-box">
           <img
@@ -54,28 +110,34 @@ const Login = () => {
           <input
             autoComplete="on"
             className="input-field"
-            type="text"
+            type="email"
+            pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
             placeholder="Enter your email"
-            value={name}
+            value={user}
             onChange={userHandler}
             required
           />
-          {userErr ? <span>user Error</span> : ""}
+          {userError && <p className="form-error">{userError}</p>}
+
           <input
             autoComplete="off"
             className="input-field"
             type="password"
             placeholder="Enter your password"
-            value={pass}
+            value={password}
+            pattern=".{8,16}$"
             onChange={passwordHandler}
             required
           />
-          {passErr ? <span>Error</span> : ""}
+          {passwordError && <p className="form-error">{passwordError}</p>}
+
+
 
           <button
             type="submit"
             className="input-field reg-btn"
-            onClick={handleClick}>
+          // onClick={Login}
+          >
             Login
           </button>
           <p className="newReg">

@@ -1,5 +1,5 @@
 .detailCard-container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     /* height: 100vh; */
     display: flex;
@@ -37,7 +37,7 @@
     justify-content: center;
     cursor: pointer;
     width: 50px;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 
