@@ -72,11 +72,18 @@ function App() {
 
   function addProduct(state, parameter2, index) {
     if (state === "add") {
-      setProducts([...products, parameter2])
+      // setProducts([...products, parameter2])
 
 
-      // let pros = [...products];
 
+
+      let pros = [...products, parameter2];
+      function uniqueobj() {
+        const result = pros.filter((ele, ind) => ind === pros.findIndex(elem => elem.ProductId === ele.ProductId))
+        return result
+      }
+
+      setProducts(uniqueobj)
 
       // let index = pros.findIndex((item) => {
       //   console.log("my item", item)
